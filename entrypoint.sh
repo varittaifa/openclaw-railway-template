@@ -10,5 +10,5 @@ fi
 
 rm -rf /home/linuxbrew/.linuxbrew
 ln -sfn /data/.linuxbrew /home/linuxbrew/.linuxbrew
-
+export NODE_OPTIONS="--max-old-space-size=4096"
 exec gosu openclaw node src/server.js
